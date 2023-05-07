@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./index.scss" />
+    <link rel="stylesheet" href="./index.css" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
@@ -29,10 +29,38 @@
     <div class="scroll_up"></div>
  </div>
 <!----------------Modal book------------->
- <div class="backdrop is-hidden" data-modal>
+ <div class="backdrop" data-modal>
   <div class="container">
     <div class="modal">
-      <include src="./partials/modal_book.html"></include>
+        <button type="button" class="modal-close-btn" data-modal-close>
+            <svg class="modal-close-btn-icon">
+              <use href="/img/symbol-defs.svg#icon-close"></use>
+            </svg>
+        </button>
+        <div class="modal-book-card-wrapper">
+            <div class="modal-book-picture-wrapper">
+            </div>
+            <div class="modal-book-info-wrapper">
+                <h4 class="modal-book-title"></h3>
+                <p class="modal-book-author"></p>
+                <p class="modal-book-description"></p>
+                <ul class="list modal-shop-list"> 
+                    <li>
+                    <a href="" class="modal-shop-link icon-amazon">
+                    </a>
+                    </li>
+                    <li>
+                    <a href="" class="modal-shop-link icon-barnesAndNoble">
+                    </a>
+                    </li>
+                    <li>
+                    <a href="" class="modal-shop-link icon-bookshop">
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+          <button type="button" class="modal-action-btn">ADD TO SHOPPING LIST</button>
     </div>
   </div>
  </div>
